@@ -1,51 +1,51 @@
-    #${title}
+# ${title}
 
-    ## Description
+## Description
 
-    ${description}
-
-
-    ## Table of Contents
-
-    * [Installation](#installation)
-	* [Usage](#usage)
-	* [Credits](#credits)
-	* [License](#license)
+${description}
 
 
-	## Instalation
+## Table of Contents
 
-	${installation}
-
-
-	## Usage
-
-	${usage}
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 
 
-	## License
+## Instalation
 
-	${license}
+${installation}
 
 
-	## 🛡Badge📛
+## Usage
 
-	https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor}
+${usage}
 
-	
-	## Contributing
-	
-	${contributing}
+
+## License
+
+${license}
+
+
+## 🛡Badge📛
+
+https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor}
 
 	
-	## Tests
+## Contributing
+	
+${contributing}
 
-	${tests}
+	
+## Tests
+
+${tests}
 
 
-	## Contact
+## Contact
 
-	Reach out to me with any questions!
-	[Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/
-	* [Visit my GitHub Page](https://github.com/${username}).
-	* [Send me an Email](mailto:${email}).
+Reach out to me with any questions!
+
+* [Visit my GitHub Page](https://github.com/${username}).
+* [Send me an Email](mailto:${email}).
