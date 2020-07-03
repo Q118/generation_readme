@@ -50,10 +50,7 @@ function generateUserInfo() {
 			message:
 				"Choose an open source license.(mit: simple & permissive, gpl: public for sharing)",
 			name: "license",
-			choices: [
-				"mit",
-				"gpl-3.0",
-			],
+			choices: ["mit", "gpl-3.0"],
 		},
 		{
 			type: "input",
@@ -149,7 +146,6 @@ ${usage}
 ## 🛡Badge📛
 
 ![](https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor})
-
     
         
 ## Contributing
