@@ -5,6 +5,7 @@
 
 	${description}
 
+
 	## Table of Contents
 
 	* [Installation](#installation)
@@ -13,16 +14,42 @@
 	* [License](#license)
 
 
+	## Instalation
+
+	${installation}
+
+
+	## Usage
+
+	${usage}
+
+
+	## License
+
+	${license}
+
+
+	## 🛡Badge📛
+
+	https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor}
+
 	
-	contents:description,installation,contributing
-	installation:this then this then that
-	usage: this and that and this
-	license: I want it simple and permissive
- 	badgeLabel: hello
-	badgeMessage: shelby
-	badgeColor: orange
-	contributing: these are example guidelines
-	tests: this is what my test could look like
-	username: q118
+	## Contributing
+	
+	${contributing}
+
+	
+	## Tests
+
+	${tests}
+
+
+	## Contact
+
+	Reach out to me with any questions!
+	[Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/
+	* [Visit my GitHub Page](https://github.com/${username}).
+	* [Send me an Email](mailto:${email})
+
 	`
 ```
