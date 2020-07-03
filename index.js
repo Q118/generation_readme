@@ -2,9 +2,10 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-const axios = require("axios");
+//const axios = require("axios");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
+
 
 //sections: title, description, table of contents, installation,
 // usage, license, badges, contributing , Tests, Questions
@@ -97,20 +98,20 @@ function generateUserInfo() {
 			message:
 				"What is your github username for developers that have questions to contact you?",
 			name: "username",
-        },
-        {
+		},
+		{
 			type: "input",
-			message:
-				"Lastly, what is your email for developers to contact you?",
+			message: "Lastly, what is your email for developers to contact you?",
 			name: "email",
 		},
-	]
+	];
 	return inquirer.prompt(questions);
 }
 
 function renderHTML({
 	title,
-	description,
+    description,
+    installation,
 	usage,
 	license,
 	badgeLabel,
@@ -118,11 +119,60 @@ function renderHTML({
 	badgeColor,
 	contributing,
 	tests,
-    username,
-    email,
+	username,
+	email,
 }) {
-    return 
-` title, description <po>
+	return ` 
+    # ${title}
 
-	`;
+    ## Description
+    
+    ${description}
+    
+    
+    ## Table of Contents
+    
+    * [Installation](#installation)
+    * [Usage](#Usage)
+    * [Credits](#Credits)
+    * [License](#License)
+    
+    
+    ## Installation
+    
+    ${installation}
+    
+    
+    ## Usage
+    
+    ${usage}
+    
+    
+    ## License
+    
+    ${license}
+    
+    
+    ## 🛡Badge📛
+    
+    https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor}
+    
+        
+    ## Contributing
+        
+    ${contributing}
+    
+        
+    ## Tests
+    
+    ${tests}
+    
+    
+    ## Contact
+    
+    Reach out to me with any questions!
+    
+    * [Visit my GitHub Page](https://github.com/${username}).
+    * [Send me an Email](mailto:${email}).
+    `;
 }
