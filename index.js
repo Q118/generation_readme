@@ -7,8 +7,18 @@ const axios = require("axios");
 //sections: title, description, table of contents, installation,
 // usage, license, badges, contributing , Tests, Questions
 
-generateUserInfo();
 
+
+async function main() {
+	try {
+		const answers = await generateUserInfo();
+		const html = renderHTML(answers);
+		await writeFileAsync("README.md", html);
+		console.log("created README.md!");
+	} catch (error) {
+		console.log(error);
+	}
+}
 function generateUserInfo() {
 	const questions = [
 		{
