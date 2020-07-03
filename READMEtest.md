@@ -31,7 +31,7 @@ I need to work in a community
     
 ## 🛡Badge📛
     
-https://img.shields.io/badge/hello-person-orange
+![](https://img.shields.io/badge/hello-person-orange)
     
         
 ## Contributing

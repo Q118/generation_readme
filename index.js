@@ -133,8 +133,8 @@ ${description}
     
 * [Installation](#installation)
 * [Usage](#Usage)
-* [Credits](#Credits)
 * [License](#License)
+* [Contact] (#Contact)
     
     
 ## Installation
@@ -153,8 +153,9 @@ ${license}
     
     
 ## 🛡Badge📛
-    
-https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor}
+
+![](https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor})
+
     
         
 ## Contributing
