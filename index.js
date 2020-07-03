@@ -6,7 +6,6 @@ const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
-
 //sections: title, description, table of contents, installation,
 // usage, license, badges, contributing , Tests, Questions
 
@@ -110,8 +109,8 @@ function generateUserInfo() {
 
 function renderHTML({
 	title,
-    description,
-    installation,
+	description,
+	installation,
 	usage,
 	license,
 	badgeLabel,
@@ -123,56 +122,56 @@ function renderHTML({
 	email,
 }) {
 	return ` 
-    # ${title}
+# ${title}
 
-    ## Description
+## Description
     
-    ${description}
-    
-    
-    ## Table of Contents
-    
-    * [Installation](#installation)
-    * [Usage](#Usage)
-    * [Credits](#Credits)
-    * [License](#License)
+${description}
     
     
-    ## Installation
+## Table of Contents
     
-    ${installation}
-    
-    
-    ## Usage
-    
-    ${usage}
+* [Installation](#installation)
+* [Usage](#Usage)
+* [Credits](#Credits)
+* [License](#License)
     
     
-    ## License
+## Installation
     
-    ${license}
+${installation}
     
     
-    ## 🛡Badge📛
+## Usage
     
-    https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor}
+${usage}
     
-        
-    ## Contributing
-        
-    ${contributing}
+    
+## License
+    
+${license}
+    
+    
+## 🛡Badge📛
+    
+https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor}
     
         
-    ## Tests
+## Contributing
+        
+${contributing}
     
-    ${tests}
+        
+## Tests
+    
+${tests}
     
     
-    ## Contact
+## Contact
     
-    Reach out to me with any questions!
+Reach out to me with any questions!
     
-    * [Visit my GitHub Page](https://github.com/${username}).
-    * [Send me an Email](mailto:${email}).
-    `;
+* [Visit my GitHub Page](https://github.com/${username}).
+* [Send me an Email](mailto:${email}).
+`;
 }

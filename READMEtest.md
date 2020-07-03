@@ -1,53 +1,52 @@
  
-    # testing again yay
+# test without tabs
 
-    ## Description
+## Description
     
-    lots of testing and debugging wow!!!
-    
-    
-    ## Table of Contents
-    
-    * [Installation](#installation)
-    * [Usage](#Usage)
-    * [Credits](#Credits)
-    * [License](#License)
+removed my tabs hoping it works now
     
     
-    ## Installation
+## Table of Contents
     
-    this and that and this
-    
-    
-    ## Usage
-    
-    this then this then this
+* [Installation](#installation)
+* [Usage](#Usage)
+* [Credits](#Credits)
+* [License](#License)
     
     
-    ## License
+## Installation
     
-    I need to work in a community
+this then this then this
     
     
-    ## 🛡Badge📛
+## Usage
     
-    https://img.shields.io/badge/hello-you-brightgreen
+all these things
     
-        
-    ## Contributing
-        
-    lots of tests
+    
+## License
+    
+I need to work in a community
+    
+    
+## 🛡Badge📛
+    
+https://img.shields.io/badge/hello-person-orange
     
         
-    ## Tests
+## Contributing
+        
+all of this
     
-    examples and tests
+        
+## Tests
+    
+testing
     
     
-    ## Contact
+## Contact
     
-    Reach out to me with any questions!
+Reach out to me with any questions!
     
-    * [Visit my GitHub Page](https://github.com/q118).
-    * [Send me an Email](mailto:shelbyfish91@gmail.com).
-    
+* [Visit my GitHub Page](https://github.com/q118).
+* [Send me an Email](mailto:shelbyfish91@gmail.com).
