@@ -48,12 +48,11 @@ function generateUserInfo() {
 		{
 			type: "list",
 			message:
-				"To choose a license, select which of the following best describes your situation.",
+				"Choose an open source license.(mit: simple & permissive, gpl: public for sharing)",
 			name: "license",
 			choices: [
-				"I need to work in a community",
-				"I want it simple and permissive",
-				"I care about sharing improvements",
+				"mit",
+				"gpl-3.0",
 			],
 		},
 		{
@@ -144,14 +143,9 @@ ${installation}
     
 ## Usage
     
-${usage}
+${usage}    
     
-    
-## License
-    
-${license}
-    
-    
+
 ## 🛡Badge📛
 
 ![](https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor})
@@ -174,5 +168,14 @@ Reach out to me with any questions!
     
 * [Visit my GitHub Page](https://github.com/${username}).
 * [Send me an Email](mailto:${email}).
+
+
+## License
+
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Licensed under the [${license}](https://choosealicense.com/licenses/${license}/) license.
+
+
 `;
 }
