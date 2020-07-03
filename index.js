@@ -111,7 +111,6 @@ function generateUserInfo() {
 function renderHTML({
 	title,
 	description,
-	contents,
 	usage,
 	license,
 	badgeLabel,
@@ -122,20 +121,58 @@ function renderHTML({
     username,
     email,
 }) {
-	return `
-    title: ${title}
-	description: ${description}
-	contents:${contents}
-	installation:${installation}
-	usage: ${usage}
-	license: ${license}
- 	badgeLabel: ${badgeLabel}
-	badgeMessage: ${badgeMessage}
-	badgeColor: ${badgeColor}
-	contributing: ${contributing}
-	tests: ${tests}
-    username: ${username}
-    email: ${email}
+    return 
+    `  #${title}
 
-`;
+	## Description
+
+	${description}
+
+
+	## Table of Contents
+
+	* [Installation](#installation)
+	* [Usage](#usage)
+	* [Credits](#credits)
+	* [License](#license)
+
+
+	## Instalation
+
+	${installation}
+
+
+	## Usage
+
+	${usage}
+
+
+	## License
+
+	${license}
+
+
+	## 🛡Badge📛
+
+	https://img.shields.io/badge/${badgeLabel}-${badgeMessage}-${badgeColor}
+
+	
+	## Contributing
+	
+	${contributing}
+
+	
+	## Tests
+
+	${tests}
+
+
+	## Contact
+
+	Reach out to me with any questions!
+	[Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/
+	* [Visit my GitHub Page](https://github.com/${username}).
+	* [Send me an Email](mailto:${email})
+
+	`;
 }

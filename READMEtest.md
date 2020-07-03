@@ -1,14 +1,13 @@
-```js
-  `  #${title}
+    #${title}
 
-	## Description
+    ## Description
 
-	${description}
+    ${description}
 
 
-	## Table of Contents
+    ## Table of Contents
 
-	* [Installation](#installation)
+    * [Installation](#installation)
 	* [Usage](#usage)
 	* [Credits](#credits)
 	* [License](#license)
@@ -49,7 +48,4 @@
 	Reach out to me with any questions!
 	[Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/
 	* [Visit my GitHub Page](https://github.com/${username}).
-	* [Send me an Email](mailto:${email})
-
-	`
-```
+	* [Send me an Email](mailto:${email}).
