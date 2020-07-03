@@ -1,0 +1,25 @@
+{
+  "name": "generation_readme",
+  "version": "1.0.0",
+  "description": "command-line app to generate ReadMe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Q118/generation_readme.git"
+  },
+  "keywords": [
+    "readMe"
+  ],
+  "author": "Shelby Anne Rothman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Q118/generation_readme/issues"
+  },
+  "homepage": "https://github.com/Q118/generation_readme#readme",
+  "dependencies": {
+    "inquirer": "^7.3.0"
+  }
+}
