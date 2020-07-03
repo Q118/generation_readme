@@ -1,6 +1,19 @@
+```js
+  `  #${title}
 
-    title: testing
-	description: want to test how this works so far
+	## Description
+
+	${description}
+
+	## Table of Contents
+
+	* [Installation](#installation)
+	* [Usage](#usage)
+	* [Credits](#credits)
+	* [License](#license)
+
+
+	
 	contents:description,installation,contributing
 	installation:this then this then that
 	usage: this and that and this
@@ -11,4 +24,5 @@
 	contributing: these are example guidelines
 	tests: this is what my test could look like
 	username: q118
-
+	`
+```

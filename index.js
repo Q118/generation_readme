@@ -35,26 +35,6 @@ function generateUserInfo() {
 			name: "description",
 		},
 		{
-			type: "checkbox",
-			message:
-				"Select which sections you would like in your table of conents, as many as you like.",
-			name: "contents",
-			choices: [
-				"title",
-				"description",
-				"contents",
-				"installation",
-				"usage",
-				"license",
-				"badgeLabel",
-				"badgeMessage",
-				"badgeColor",
-				"contributing",
-				"tests",
-				"username",
-			],
-		},
-		{
 			type: "input",
 			message: "What are the steps required to install your project?",
 			name: "installation",
@@ -117,6 +97,12 @@ function generateUserInfo() {
 			message:
 				"What is your github username for developers that have questions to contact you?",
 			name: "username",
+        },
+        {
+			type: "input",
+			message:
+				"Lastly, what is your email for developers to contact you?",
+			name: "email",
 		},
 	];
 	return inquirer.prompt(questions);
@@ -126,7 +112,6 @@ function renderHTML({
 	title,
 	description,
 	contents,
-	installation,
 	usage,
 	license,
 	badgeLabel,
@@ -134,7 +119,8 @@ function renderHTML({
 	badgeColor,
 	contributing,
 	tests,
-	username,
+    username,
+    email,
 }) {
 	return `
     title: ${title}
@@ -148,7 +134,8 @@ function renderHTML({
 	badgeColor: ${badgeColor}
 	contributing: ${contributing}
 	tests: ${tests}
-	username: ${username}
+    username: ${username}
+    email: ${email}
 
 `;
 }
