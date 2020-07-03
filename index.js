@@ -7,8 +7,6 @@ const axios = require("axios");
 //sections: title, description, table of contents, installation,
 // usage, license, badges, contributing , Tests, Questions
 
-
-
 async function main() {
 	try {
 		const answers = await generateUserInfo();
@@ -45,19 +43,20 @@ function generateUserInfo() {
 		},
 		{
 			type: "input",
-			message: "What are the instructions and examples for use of your project?",
+			message:
+				"What are the instructions and examples for use of your project?",
 			name: "usage",
-        },
-        {
-			type: "checkbox",
+		},
+		{
+			type: "list",
 			message:
 				"To choose a license, select which of the following best describes your situation.",
-            name: "license",
-            choices: [
-                "I need to work in a community",
-                "I want it simple and permissive",
-                "I care about sharing improvements",
-            ]
+			name: "license",
+			choices: [
+				"I need to work in a community",
+				"I want it simple and permissive",
+				"I care about sharing improvements",
+			],
 		},
 		{
 			type: "input",
@@ -68,22 +67,57 @@ function generateUserInfo() {
 			type: "input",
 			message: "What message would you like on your badge?(choose one word)",
 			name: "badgeMessage",
-        },
-        {
+		},
+		{
+			type: "list",
+			message: "Selct a color for your badge.",
+			name: "badgeColor",
+			choices: [
+				"brightgreen",
+				"yellowgreen",
+				"orange",
+				"yellow",
+				"red",
+				"blue",
+				"purple",
+			],
+		},
+		{
 			type: "input",
-			message: "Explain guidelines for how other developers can contribute to your project?",
+			message:
+				"Explain guidelines for how other developers can contribute to your project?",
 			name: "contributing",
-        },
-        {
+		},
+		{
 			type: "input",
-			message: "Write out a test for your application with examples if applicable.",
+			message:
+				"Write out a test for your application with examples if applicable.",
 			name: "tests",
-        },
-        {
+		},
+		{
 			type: "input",
-			message: "What is your github username for developers that have questions to contact you?",
-			name: "questions",
+			message:
+				"What is your github username for developers that have questions to contact you?",
+			name: "username",
 		},
 	];
 	return inquirer.prompt(questions);
+}
+
+function renderHTML({
+	title,
+	description,
+	contents,
+	installation,
+	usage,
+	license,
+	badgeLabel,
+	badgeMessage,
+	badgeColor,
+	contributing,
+	tests,
+	username,
+}) {
+return ' '
+
 }
