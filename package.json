@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Q118/generation_readme#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "inquirer": "^7.3.0"
   }
 }
