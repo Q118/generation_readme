@@ -6,7 +6,6 @@ const axios = require("axios");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
-
 //sections: title, description, table of contents, installation,
 // usage, license, badges, contributing , Tests, Questions
 
@@ -39,22 +38,21 @@ function generateUserInfo() {
 			type: "checkbox",
 			message:
 				"Select which sections you would like in your table of conents, as many as you like.",
-            name: "contents",
-            choices: [
-                "title",
-                "description",
-                "contents",
-                "installation",
-                "usage",
-                "license",
-                "badgeLabel",
-                "badgeMessage",
-                "badgeColor",
-                "contributing",
-                "tests",
-                "username",
-            ]
-            
+			name: "contents",
+			choices: [
+				"title",
+				"description",
+				"contents",
+				"installation",
+				"usage",
+				"license",
+				"badgeLabel",
+				"badgeMessage",
+				"badgeColor",
+				"contributing",
+				"tests",
+				"username",
+			],
 		},
 		{
 			type: "input",
@@ -138,7 +136,7 @@ function renderHTML({
 	tests,
 	username,
 }) {
-return `
+	return `
     title: ${title}
 	description: ${description}
 	contents:${contents}
@@ -153,5 +151,4 @@ return `
 	username: ${username}
 
 `;
-
 }
