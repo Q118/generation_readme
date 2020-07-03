@@ -130,7 +130,7 @@ ${description}
 * [Installation](#installation)
 * [Usage](#Usage)
 * [License](#License)
-* [Contact] (#Contact)
+* [Contact](#Contact)
     
     
 ## Installation
