@@ -1,9 +1,9 @@
  
-# testing
+# Marvel Match
 
 ## Description
     
-testing about this and this and this
+An application where a user can select input search criteria from radio-button menus regarding personality traits of Marvel characters. The app will compare those inputs to data from the Marvel API and display a character that matches the search criteria.
     
     
 ## Table of Contents
@@ -16,27 +16,27 @@ testing about this and this and this
     
 ## Installation
     
-first this then this then that
+If you edit in VScode, must install Go Live. Open the app on the web to begin or on your mobile device.
     
     
 ## Usage
     
-do this and then do that    
+If you are bored and a fan of Marvel, sit down on your computer or phone and press start to play the quiz.    
     
 
 ## 🛡Badge📛
 
-![](https://img.shields.io/badge/hello-world-blue)
+![](https://img.shields.io/badge/Marvel-Universe-red)
     
         
 ## Contributing
         
-fork it if you want to 
+Please feel free to fork, add comments, and share.
     
         
 ## Tests
     
-testing done like so
+Test to be done through Go Live
     
     
 ## Contact
