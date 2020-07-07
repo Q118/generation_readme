@@ -15,8 +15,8 @@ async function main() {
 	try {
 		const answers = await generateUserInfo();
 		const html = renderHTML(answers);
-		await writeFileAsync("demoREADMEtest.md", html);
-		console.log("successfully created demoREADMEtest.md!");
+		await writeFileAsync("demoREADME.md", html);
+		console.log("successfully created demoREADME.md!");
 	} catch (error) {
 		console.log(error);
 	}
