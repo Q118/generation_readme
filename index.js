@@ -2,11 +2,11 @@
 
 const inquirer = require("inquirer");
 const fs = require("fs");
-//const axios = require("axios");
+
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
-//sections: title, description, table of contents, installation,
+//sections to dynamaically createnode: title, description, table of contents, installation,
 // usage, license, badges, contributing , Tests, Questions
 
 main();
@@ -15,8 +15,8 @@ async function main() {
 	try {
 		const answers = await generateUserInfo();
 		const html = renderHTML(answers);
-		await writeFileAsync("READMEtest.md", html);
-		console.log("created READMEtest.md!");
+		await writeFileAsync("demoREADMEtest.md", html);
+		console.log("successfully created demoREADMEtest.md!");
 	} catch (error) {
 		console.log(error);
 	}

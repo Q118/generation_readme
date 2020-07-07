@@ -1,5 +1,9 @@
 # generation_readme
-command-line app to generate ReadMe
+A Command Line Interface Application used to develop a good README for your next GitHub project
 
--instalation: cnpm install inquirer --save
--instalation: cnpm install axios --save
+
+
+# Steps
+-npm init -y
+-instalation: npm install inquirer --save
+
